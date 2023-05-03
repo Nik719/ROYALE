@@ -1,0 +1,153 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em=16px */
+
+/* ****************** */
+/* BELOW 1344PX (smaller dextop) */
+/* ****************** */
+
+@media (max-width: 84em) {
+  .section-hero {
+    padding: 0 2.4rem;
+  }
+  .casino {
+    padding: 0 4.8rem;
+  }
+  .heading-primary {
+    font-size: 3.2rem;
+    margin-bottom: 4.8rem;
+  }
+
+  .paragraph {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    padding: 2.4rem;
+  }
+
+  .heading-x {
+    font-size: 2.4rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+/* ****************** */
+/* BELOW 1200PX (landscape tablet) */
+/* ****************** */
+
+@media (max-width: 75em) {
+  html {
+    /* 9px/16px */
+    font-size: 56.25%;
+  }
+  .btn,
+  .btn:link,
+  .btn:visited {
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 0.8rem 2rem;
+  }
+}
+
+/* ****************** */
+/* BELOW 944PX (tablet) */
+/* ****************** */
+@media (max-width: 59em) {
+  html {
+    /* 8px/16=1.2=50% */
+    font-size: 50%;
+  }
+  .paragraph {
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+    padding: 1.8rem;
+  }
+
+  .heading-primary {
+    font-size: 2.4rem;
+  }
+  .image {
+    padding: 20rem;
+  }
+
+  .heading-x {
+    font-size: 1.8rem;
+  }
+}
+
+/* ****************** */
+/* BELOW 704PX (smaller tablet) */
+/* ****************** */
+
+@media (max-width: 44em) {
+  .paragraph {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    padding: 1.4rem;
+  }
+  .casino {
+    margin-top: 3rem;
+  }
+
+  .heading-primary {
+    font-size: 2.4rem;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 0.8rem 1.8rem;
+  }
+  .image {
+    padding: 15rem;
+  }
+
+  .heading-x {
+    font-size: 2.4rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .grid {
+    row-gap: 4.8rem;
+  }
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .heading-primary {
+    font-size: 2rem;
+  }
+  .btn,
+  .btn:link,
+  .btn:visited {
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 0.6rem 1.4rem;
+  }
+  .image {
+    padding: 10rem;
+  }
+  .grid {
+    row-gap: 4.8rem;
+  }
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128  */

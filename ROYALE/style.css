@@ -1,0 +1,258 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #fff);
+  background-color: #333130;
+
+  /* Only works if there is nothing absolutely positioned in relation to body */
+  overflow-x: hidden;
+}
+/**************************/
+/* HEADER */
+/**************************/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #333130; */
+
+  /* Because we want header to be sticky later */
+  height: 9.6rem;
+  padding:4.8rem;
+  position: relative;
+}
+
+.logo {
+  height: 5.4rem;
+}
+
+/**************************/
+/* NAVIGATION */
+/**************************/
+
+
+.main-nav-list {
+  list-style: none;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(240, 230, 230);
+  font-weight: 600;
+  font-size: 2rem;
+  transition: all 0.3s;
+}
+
+.wallet {
+  padding: 0.7rem 1.2rem;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #e62232;
+  font-size: 20px;
+}
+.spacing {
+  display: flex;
+}
+
+.james {
+  position: relative;
+  margin-top: 20px;
+}
+.heading-primary,
+.heading-secondary {
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.5px;
+}
+
+
+.heading-secondary {
+  line-height: 1.2;
+  margin-top: 9.6rem;
+}
+
+.xx {
+  font-size: 2.4rem;
+  color: #fff;
+  margin-left: 9.6rem;
+  margin-bottom: 4.4rem;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 9.6rem;
+  color: #fff;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1rem 2.4rem;
+  border-radius: 9px;
+  border-style: solid;
+  /* Only necessary for .btn */
+
+  cursor: pointer;
+  font-family: inherit;
+
+  /* Put transition on original "state" */
+  /* transition: background-color 0.3s; */
+  transition: all 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #e62232;
+  color: #fff;
+  border-color: #e62232;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #e96c5b;
+  border-color: #e96c5b;
+}
+
+.btn--small {
+  color: green;
+}
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+/**************************/
+/* HERO SECTION */
+/**************************/
+
+.section-hero {
+  /* background-color: #333130; */
+  padding: 4.8rem ;
+}
+#token {
+  color: rgb(22, 206, 32);
+}
+.image {
+  display: flex;
+  background-image: url(Img/coins\ header.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 30rem;
+}
+
+/**CASINO SECTION */
+/**************************/
+.live-casino {
+  font-size: 3.8rem;
+  color: #fff;
+  margin-left: 9.6rem;
+  margin-bottom: 4.4rem;
+}
+.green{
+  color: green;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2.4rem;
+  padding: 0 9.6rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+  border-radius: 9px;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+.grid {
+  display: grid;
+  column-gap: 4.8rem;
+  row-gap: 5.4rem;
+
+  /* margin-bottom: 9.6rem; */
+}
+
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 9.6rem;
+}
+
+.paragraph {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  color: #fff;
+  padding: 3.2rem;
+  text-align: center;
+  align-items: center;
+}
+
+.heading-x{
+  color: green;
+  font-size: 3.8rem;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.first,.second,.third {
+  border-radius: 9px;
+  width: 75%;
+  background-color: hsl(157, 79%, 37%);
+  padding: 25px;
+  box-shadow: inset 0px -15px 15px 8px hwb(0 0% 100% / 0.904);
+}
+.we {
+  color: green;
+}
+.casino{
+  padding: 4.8rem;
+}
+.promise {
+  padding: 0 4.8rem;
+}
